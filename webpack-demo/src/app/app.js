@@ -1,20 +1,19 @@
-const numberOneInput = document.getElementById("numberOne");
-const numberTwoInput = document.getElementById("numberTwo");
-const addValuesButton = document.getElementById("addValues");
-const resultDiv = document.getElementById("result");
+const alertService = new AlertService();
+const componentService = new ComponentService();
+const run = (alertService, componentService) => {
+  alertService.hideErrors();
 
-alertService.hideErrors();
-
-
-addValuesButton.addEventListener("click", () => {
-  hideErrors();
-  const inputs = [numberOneInput.value, numberTwoInput.value];
-  const parsedInputs = parseInputs(...inputs);
-  if (inputsAreValid(...parsedInputs)) {
-    const [numA, numB] = parsedInputs;
-    resultDiv.innerText = numA + numB;
-  } else {
-    resultDiv.innerText = "";
-    handleAdditionError(inputs, parsedInputs);
-  }
-});
+  componentService.onClick(() => {
+    alertService.hideErrors();
+    const inputs = componentService.getInputs();
+    const parsedInputs = parseInputs(...inputs);
+    if (inputsAreValid(...parsedInputs)) {
+      const [numA, numB] = parsedInputs;
+      componentService.setResult(numA + numB);
+    } else {
+      componentService.setResult("");
+      alertService.handleAdditionError(inputs, parsedInputs);
+    }
+  });
+};
+run(alertService, componentService);
