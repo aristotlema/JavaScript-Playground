@@ -1,0 +1,82 @@
+body {
+    background-color: #c7dae8;
+    font-family: 'Open Sans';
+}
+
+.logo-blue {
+    color:#4ba1ff;
+}
+
+nav{
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    a{
+        text-decoration: none;
+        color: inherit;
+        flex:1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a:hover{
+        background-color: #4ba1ff;
+    }
+}
+
+main {
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;  
+}
+
+#create-account-window
+{
+    background-color: white;
+    height: 550px;
+    width: 850px;
+    box-shadow:  0 0 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    border-radius: 25px;
+    #main-image{
+        flex: 1;
+        img{
+            border-radius: 25px 0 0 25px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            height: 100%;
+        }
+    }
+}
+
+#create-account-container{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    #create-account-header{
+        flex:1;
+
+        #create-account-title-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+    }
+
+    #create-account-form{
+        flex:1;
+    }
+}
