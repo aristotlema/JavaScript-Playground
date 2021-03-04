@@ -13,8 +13,8 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
     a{
         text-decoration: none;
         color: inherit;
@@ -67,16 +67,73 @@ main {
 
     #create-account-header{
         flex:1;
+        display: flex;
+        flex-direction: column;
 
         #create-account-title-bar{
+            flex: 1;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            align-items: baseline;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main-message{
+            flex :1;
+        }
+
+        #create-account-title-bar, #main-message{
+            padding: 0px 35px;
         }
     }
 
     #create-account-form{
         flex:1;
+        form{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: flex-start;
+            // align-items: center;
+
+            .form-items{
+                flex:1;
+
+                // padding: 10px 10px 0px 10px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: flex-start;
+                .form-item{
+                    width: 49%;
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        width: 85%;
+                    }
+                }
+            }
+            .submit-items{
+                flex: 1;
+                // padding: 0 10px 10px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                #terms-conditions{
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    p input{
+                        margin: 0;
+                    }
+                }
+                #submit-button{
+                    flex: 1;
+                }
+            }
+
+            .form-items, .submit-items {
+                padding: 0px 35px;
+            }
+        }
     }
 }
