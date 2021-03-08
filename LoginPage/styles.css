@@ -198,7 +198,7 @@ main {
 }
 
 #create-account-container #create-account-form form .form-items .form-item input {
-  width: 85%;
+  width: 100%;
 }
 
 #create-account-container #create-account-form form .submit-items {

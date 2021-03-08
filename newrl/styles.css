@@ -1,0 +1,67 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main-nav-bar {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #082529;
+  border-bottom: 2px solid #102d30;
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.911);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.911);
+}
+
+#main-nav-bar h2 {
+  font-weight: 300;
+}
+
+#main-nav-bar .main-logo {
+  font-weight: 600;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-nav-bar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-nav-bar .main-nav-left {
+  -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5;
+}
+
+#main-nav-bar .main-nav-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#main-nav-bar .main-nav-right {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+main #hero-section {
+  height: 100vh;
+  background-color: #082529;
+}
+/*# sourceMappingURL=styles.css.map */

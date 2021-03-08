@@ -1,0 +1,56 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+$main-green-background: #082529;
+$white-text: #ffffff;
+
+
+
+#main-nav-bar{
+    height: 8vh;
+    display: flex;
+    color: $white-text;
+    justify-content: space-around;
+    background-color: $main-green-background;
+    border-bottom: 2px solid #102d30;
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.911);
+    
+
+    h2{
+        font-weight: 300;
+    }
+    
+
+    .main-logo{
+        font-weight: 600;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-nav-left{
+        flex: 2.5;
+    }
+    .main-nav-spacer{
+        flex: 1;
+    }
+    .main-nav-right{
+        flex: 1.5;
+    }
+    
+}
+
+main #hero-section
+{
+    height: 100vh;
+    background-color: $main-green-background;
+}
+
