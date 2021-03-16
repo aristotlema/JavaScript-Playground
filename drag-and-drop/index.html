@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="example-parent">
+        <div class="example-origin">
+            <div 
+                id="draggable-1" 
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                draggable 1
+            </div>
+            <div 
+                id="draggable-2" 
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                draggable 2
+            </div>
+            <div 
+                id="draggable-3" 
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                draggable 3
+            </div>
+            <div 
+                id="draggable-4" 
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                draggable 4
+            </div>
+            <div 
+                id="draggable-5" 
+                class="example-draggable"
+                draggable="true"
+                ondragstart="onDragStart(event);"
+            >
+                draggable 5
+            </div>
+        </div>
+        <div 
+            class="example-dropzone" 
+            ondragover="onDragOver(event);"
+            ondrop="onDrop(event);"
+        >
+            drop zone
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
