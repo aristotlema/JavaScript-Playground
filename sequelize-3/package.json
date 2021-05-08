@@ -1,0 +1,22 @@
+{
+  "name": "sequelize-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "make-model": "sequelize-cli model:generate --name User --attributes email:string",
+    "migrate": "sequelize-cli db:migrate",
+    "down": "sequelize-cli db:migrate:undo",
+    "make-seed": "sequelize-cli seed:generate --name demo-user",
+    "seed": "sequelize-cli db:seed:all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  }
+}
